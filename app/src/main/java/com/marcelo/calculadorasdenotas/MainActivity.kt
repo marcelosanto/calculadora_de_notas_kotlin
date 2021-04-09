@@ -2,6 +2,7 @@ package com.marcelo.calculadorasdenotas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Toast
 import com.marcelo.calculadorasdenotas.databinding.ActivityMainBinding
 
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
             var resul = binding.txtResult
 
-            if (!num1.text.isEmpty() || !num2.text.isEmpty() || !num3.text.isEmpty() || !num4.text.isEmpty() || !faltas.text.isEmpty() ) {
+            if (!TextUtils.isEmpty(num1.text.toString()) && !TextUtils.isEmpty(num2.text.toString()) && !TextUtils.isEmpty(num3.text.toString()) && !TextUtils.isEmpty(num4.text.toString()) && !TextUtils.isEmpty(faltas.text.toString())) {
                 val nota1 = Integer.parseInt(num1.text.toString())
                 val nota2 = Integer.parseInt(num2.text.toString())
                 val nota3 = Integer.parseInt(num3.text.toString())
