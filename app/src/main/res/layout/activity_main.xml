@@ -88,7 +88,7 @@
         android:layout_marginTop="50dp"
         />
     <Button
-        android:id="@+id/btn_calcular"
+        android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular"
@@ -104,12 +104,13 @@
         />
 
     <TextView
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aluno foi Aprovado"
+        android:text=""
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_below="@+id/btn_calcular"
+        android:layout_below="@+id/btnCalcular"
         android:gravity="center"/>
 
 
